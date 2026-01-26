@@ -1,4 +1,4 @@
-# 📱 Mobile HackLab
+# 📱 Mobile HackLab - Run Linux on Android With GPU Acceleration (No Root)
 
 > Turn your Android phone into a powerful hacking machine with one command!
 
@@ -99,3 +99,4 @@ If this helped you, please give it a star! ⭐
 ---
 
 Made with ❤️ by **Tech Jarves**
+
