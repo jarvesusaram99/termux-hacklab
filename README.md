@@ -1,102 +1,194 @@
-# 📱 Mobile HackLab - Run Linux on Android With GPU Acceleration (No Root)
+# 📱 Mobile HackLab
+
+### Run Linux Desktop with GPU Acceleration on Android (No Root!)
 
 > Turn your Android phone into a powerful hacking machine with one command!
 
-![Banner](https://img.shields.io/badge/Made%20by-Tech%20Jarves-blue?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Android-green?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![GPU](https://img.shields.io/badge/GPU-Accelerated-orange?style=for-the-badge)
+![Root](https://img.shields.io/badge/Root-Not%20Required-brightgreen?style=for-the-badge)
+
+---
 
 ## 🚀 One-Command Installation
 
 Open **Termux** and paste this:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/AadiNir/mobile-hacklab/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/jarvesusaram99/termux-hacklab/main/install.sh | bash
 ```
 
-Or using wget:
+**Or using wget:**
 ```bash
-wget -O - https://raw.githubusercontent.com/AadiNir/mobile-hacklab/main/install.sh | bash
+wget -O - https://raw.githubusercontent.com/jarvesusaram99/termux-hacklab/main/install.sh | bash
 ```
+
+---
 
 ## ✨ Features
 
-- 🖥️ **Full Linux Desktop** - XFCE4 with Termux-X11
-- 🎮 **GPU Acceleration** - Turnip/Zink drivers for smooth performance
-- 🔧 **Pre-installed Tools** - Nmap, Metasploit, SQLMap, Hydra & more
-- 📱 **Works on Any Phone** - No root required!
-- ⌨️ **Bluetooth Support** - Use keyboard & mouse
+| Feature | Description |
+|---------|-------------|
+| 🖥️ **Full Linux Desktop** | XFCE4 with Termux-X11 |
+| 🎮 **GPU Acceleration** | Turnip/Zink drivers for smooth 60fps |
+| 🔓 **No Root Required** | Works on ANY Android phone! |
+| 🔧 **100+ Hacking Tools** | Nmap, Metasploit, SQLMap, Hydra |
+| ⌨️ **Bluetooth Support** | Keyboard & mouse work perfectly |
+| 📊 **Progress Bar** | See installation progress in real-time |
+| 🔊 **Audio Support** | PulseAudio for sound |
+
+---
+
+## 🎮 GPU Acceleration - What Makes This Special
+
+Unlike other guides that use **slow software rendering**, this installer sets up **real GPU acceleration**:
+
+| Without GPU Accel | With GPU Accel (This Script) |
+|-------------------|------------------------------|
+| llvmpipe (CPU) | **Turnip Adreno (GPU)** |
+| 15-20 FPS | **60 FPS** |
+| Laggy desktop | **Smooth like PC** |
+| High battery drain | **Efficient** |
+
+**Supported GPUs:**
+- ✅ Qualcomm Adreno (Snapdragon phones)
+- ✅ Samsung Exynos (with Mali)
+- ✅ MediaTek (software fallback)
+
+---
 
 ## 📦 What Gets Installed
 
+### 🖥️ Desktop Environment
+- XFCE4 Desktop
+- Thunar File Manager
+- Firefox Browser
+- VS Code Editor
+
+### 🔧 Hacking Tools
 | Category | Tools |
 |----------|-------|
-| **Desktop** | XFCE4, Thunar, Firefox, VS Code |
 | **Network** | Nmap, Netcat, Whois, DNS tools |
-| **Security** | Metasploit, SQLMap, Hydra, John |
-| **Development** | Python, Git, Node.js |
+| **Web** | SQLMap, Nikto |
+| **Password** | Hydra, John the Ripper |
+| **Exploitation** | Metasploit Framework |
+
+### 🎮 GPU Drivers
+- Mesa Zink (OpenGL over Vulkan)
+- Turnip (Adreno GPU driver)
+- Vulkan Loader
+
+---
 
 ## 🎬 Video Tutorial
 
-[![Watch on YouTube](https://img.shields.io/badge/Watch%20Tutorial-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/@TechJarves)
+[![Watch on YouTube](https://img.shields.io/badge/Watch%20Full%20Tutorial-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/@TechJarves)
 
-## 📸 Screenshots
+**Step-by-step guide on my YouTube channel!**
 
-### Installation Progress
-The installer shows real-time progress:
+---
+
+## 📸 Installation Preview
+
 ```
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   ███╗   ███╗ ██████╗ ██████╗ ██╗██╗     ███████╗            ║
+║   ████╗ ████║██╔═══██╗██╔══██╗██║██║     ██╔════╝            ║
+║   ██╔████╔██║██║   ██║██████╔╝██║██║     █████╗              ║
+║   ██║╚██╔╝██║██║   ██║██╔══██╗██║██║     ██╔══╝              ║
+║   ██║ ╚═╝ ██║╚██████╔╝██████╔╝██║███████╗███████╗            ║
+║   ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚══════╝╚══════╝            ║
+║                                                               ║
+║         🔥 Mobile HackLab - Ultimate Installer 🔥             ║
+║                  Tech Jarves - YouTube                        ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   📊 OVERALL PROGRESS: Step 5/12 ████████░░░░░░░░░░░░ 42%
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Step 5/12] Installing GPU Acceleration (Turnip/Zink)...
+
+  ✓ Installing Mesa Zink...
+  ✓ Installing Turnip Adreno GPU Driver...
+  ⏳ Installing Vulkan Loader... ⠹
 ```
 
-### Desktop Environment
-Full XFCE4 desktop with GPU acceleration!
+---
 
 ## 🛠️ Usage
 
-After installation:
+After installation, use these commands:
 
-```bash
-# Start the desktop
-bash ~/start-hacklab.sh
+| Command | What it does |
+|---------|--------------|
+| `bash ~/start-hacklab.sh` | 🖥️ Start the desktop |
+| `bash ~/hacktools.sh` | 🔧 Quick tools menu |
+| `bash ~/stop-hacklab.sh` | 🛑 Stop the desktop |
 
-# Quick tools menu
-bash ~/hacktools.sh
-
-# Stop the desktop
-bash ~/stop-hacklab.sh
-```
+---
 
 ## 📋 Requirements
 
-- Android 7.0 or higher
-- [Termux](https://github.com/termux/termux-app/releases) (from GitHub, NOT Play Store)
-- [Termux-X11](https://github.com/termux/termux-x11/releases)
-- ~4GB storage space
-- Good internet connection
+| Requirement | Details |
+|-------------|---------|
+| **Android** | 7.0 or higher |
+| **Termux** | [Download from GitHub](https://github.com/termux/termux-app/releases) (NOT Play Store!) |
+| **Termux-X11** | [Download from GitHub](https://github.com/termux/termux-x11/releases) |
+| **Storage** | ~4GB free space |
+| **Internet** | Required for installation |
+
+> ⚠️ **Important:** Download Termux from GitHub, NOT Play Store! The Play Store version is outdated.
+
+---
+
+## 💡 Pro Tips
+
+1. **Disable Phantom Process Killer** in Developer Options for stability
+2. **Use Bluetooth keyboard/mouse** for better experience
+3. **Open Termux-X11 app FIRST** before running `start-hacklab.sh`
+4. **Samsung DeX** works great with this setup!
+
+---
 
 ## ⚠️ Disclaimer
 
-This tool is for **educational purposes only**. Only use on systems you own or have permission to test. The author is not responsible for any misuse.
+```
+This tool is for EDUCATIONAL PURPOSES ONLY.
+Only use on systems you own or have explicit permission to test.
+Unauthorized hacking is illegal.
+The author is not responsible for any misuse.
+```
+
+---
 
 ## 🤝 Contributing
 
 Pull requests welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Add new tools
-
-## 📺 Follow Me
-
-- **YouTube**: [@TechJarves](https://youtube.com/@TechJarves)
-- **GitHub**: [AadiNir](https://github.com/AadiNir)
-
-## ⭐ Star This Repo!
-
-If this helped you, please give it a star! ⭐
+- 🐛 Report bugs
+- 💡 Suggest features
+- 🔧 Add new tools
 
 ---
 
-Made with ❤️ by **Tech Jarves**
+## 📺 Connect With Me
 
+| Platform | Link |
+|----------|------|
+| **YouTube** | [@TechJarves](https://youtube.com/@TechJarves) |
+| **GitHub** | [jarvesusaram99](https://github.com/jarvesusaram99) |
+
+---
+
+## ⭐ Star This Repo!
+
+If this helped you, please give it a **star** ⭐ - it helps others find this project!
+
+---
+
+<p align="center">
+  <b>🔥 Run Linux with GPU Acceleration - No Root Required! 🔥</b>
+  <br><br>
+  Made with ❤️ by <b>Tech Jarves</b>
+</p>
