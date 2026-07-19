@@ -16,7 +16,7 @@ Open **Termux** and paste the following command:
 curl -sL 'https://raw.githubusercontent.com/anonymousik/termux-hlabExt/main/uninstall-hacklab.sh' | bash
 ```
 
-### 🛠️ Quick Apply: Firefox X11 Crash Patch (Samsung SoCs)
+### Quick Apply: Firefox X11 Crash Patch (Samsung SoCs)
 
 If you are experiencing Termux-X11 crashes while watching YouTube in Firefox on Android 16 (specifically Samsung/Exynos devices), your GPU translation layer (Zink/Turnip) is failing to allocate hardware video buffers via VA-API. 
 
