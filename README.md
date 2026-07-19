@@ -16,6 +16,27 @@ Open **Termux** and paste the following command:
 curl -sL 'https://raw.githubusercontent.com/anonymousik/termux-hlabExt/main/uninstall-hacklab.sh' | bash
 ```
 
+### 🛠️ Quick Apply: Firefox X11 Crash Patch (Samsung SoCs)
+
+If you are experiencing Termux-X11 crashes while watching YouTube in Firefox on Android 16 (specifically Samsung/Exynos devices), your GPU translation layer (Zink/Turnip) is failing to allocate hardware video buffers via VA-API. 
+
+This automated patch modifies your Firefox profile to forcefully utilize a highly stable software decoder (FFvpx) for media playback, entirely bypassing the hardware API while maintaining WebRender UI acceleration.
+
+**Apply instantly via `curl` (Recommended):**
+```bash
+curl -sSL https://raw.githubusercontent.com/anonymousik/termux-hlabExt/main/patch_ff_x11.sh | bash
+```
+
+**Alternative application via `wget`:**
+
+```bash
+wget -qO- https://raw.githubusercontent.com/anonymousik/termux-hlabExt/main/patch_ff_x11.sh | bash
+```
+
+**Post-Installation:**
+The script automatically injects the necessary configurations into `~/.mozilla/firefox/` and exports `MOZ_DISABLE_VAAPI=1` to your shell RC files. Please restart your terminal session or run source `~/.bashrc` for changes to take effect.
+
+
 ## ✨ Features & Architecture Upgrades in v3.0.0 (by @Anonymousik)
 Version 3.0.0 shifts Hacklab from a basic installation script to an automated, intelligent workspace:
 
